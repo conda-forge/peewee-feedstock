@@ -1,7 +1,7 @@
 About peewee
 ============
 
-Home: http://github.com/coleifer/peewee/
+Home: https://github.com/coleifer/peewee/
 
 Package license: MIT
 
