@@ -1,8 +1,8 @@
 {%set name = "peewee" %}
-{%set version = "2.9.1" %}
+{%set version = "2.9.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "5254584d8e2e131f887f25a8329443a4cef89828c8f754e8e721865859f30616" %}
+{%set hash_val = "96d1eee9846f090cf4387cfc2af193b0db4d3c61867c28b85b666a0e5824693c" %}
 {%set build_num = "0" %}
 
 package:
