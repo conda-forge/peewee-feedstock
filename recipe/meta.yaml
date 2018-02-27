@@ -15,15 +15,13 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-
   number: {{ build }}
-  script: python setup.py install
 
 requirements:
   build:
     - python
     - cython >=0.22.1
-
+    - toolchain
   run:
     - python
 
