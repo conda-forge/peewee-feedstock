@@ -21,6 +21,7 @@ requirements:
   build:
     - python
     - cython >=0.22.1
+    - toolchain
   run:
     - python
 
