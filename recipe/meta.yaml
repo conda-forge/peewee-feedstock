@@ -1,8 +1,8 @@
 {% set name = "peewee" %}
-{% set version = "2.10.2" %}
+{% set version = "3.2.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "2342067f48a779e35956a44cd547df883dda35153daa9fe994d970585aaec281" %}
+{% set hash_val = "34000900eedfcce5a38eb84d8d197f41a537e10a36419aba0c407215dd87afeb" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
 
-  number: {{ build }}
+  number: 0
   script: python setup.py install
 
 requirements:
