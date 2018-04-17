@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - python
+    - pip
     - cython >=0.22.1
     - toolchain
     - msinttypes  # [win]
