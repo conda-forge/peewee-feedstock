@@ -1,9 +1,8 @@
 {% set name = "peewee" %}
-{% set version = "3.2.4" %}
+{% set version = "3.2.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "f82785b4c0a12b162808f44ec36b6bda23e8cad78ff3def41c37d0d455163db9" %}
-{% set build = 0 %}
+{% set hash_val = "2dc2895d5ef6680e3f27926740e0d1679ca946d8705a5a51f7145c05c2d9556e" %}
 
 package:
   name: {{ name }}
