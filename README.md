@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-peewee-green.svg)](https://anaconda.org/conda-forge/peewee)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-peewee-green.svg)](https://anaconda.org/conda-forge/peewee) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/peewee.svg)](https://anaconda.org/conda-forge/peewee) |
 
 Installing peewee
 =================
