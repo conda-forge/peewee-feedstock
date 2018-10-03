@@ -13,7 +13,7 @@ pin_run_as_build:
   sqlite:
     max_pin: x
 python:
-- '3.6'
+- '3.7'
 sqlite:
 - '3'
 zip_keys:
