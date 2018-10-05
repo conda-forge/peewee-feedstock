@@ -1,8 +1,8 @@
 {% set name = "peewee" %}
-{% set version = "3.6.4" %}
+{% set version = "3.7.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "538d7b7f892e59ecbef6eeefb867fd37f20ac77e602b4ee94b2766836cfa24ba" %}
+{% set hash_val = "a91c3ccff43ab71f08196aba1d17dd2548079744d54adc33d511db1c30b446ba" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
