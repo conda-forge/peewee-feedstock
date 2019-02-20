@@ -1,7 +1,5 @@
 {% set name = "peewee" %}
 {% set version = "3.8.2" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
 {% set hash_val = "7f8e3f512ee0d4e2d9c2008ea446d69e23c9535466367b991d452825a1ddb654" %}
 
 package:
@@ -9,9 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ hash_val }}
 
 build:
   number: 0
@@ -19,10 +16,13 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - make  # [unix]
+  host:
     - python
     - pip
     - cython >=0.22.1
-    - toolchain
     - msinttypes  # [win]
     - sqlite
   run:
