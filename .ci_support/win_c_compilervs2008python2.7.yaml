@@ -1,3 +1,5 @@
+c_compiler:
+- vs2008
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -12,3 +14,6 @@ python:
 - '2.7'
 sqlite:
 - '3'
+zip_keys:
+- - python
+  - c_compiler
