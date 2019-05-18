@@ -1,8 +1,8 @@
 {% set name = "peewee" %}
-{% set version = "3.6.4" %}
+{% set version = "3.9.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "538d7b7f892e59ecbef6eeefb867fd37f20ac77e602b4ee94b2766836cfa24ba" %}
+{% set hash_val = "074331625cf4335a27af3a8f644eabe2858cd3fc91fa95a7f18db16bd640f7cc" %}
 
 package:
   name: {{ name }}
@@ -14,15 +14,16 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - pip
     - cython >=0.22.1
-    - toolchain
     - msinttypes  # [win]
     - sqlite
   run:
