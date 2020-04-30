@@ -1,8 +1,6 @@
 {% set name = "peewee" %}
-{% set version = "3.10.0" %}
+{% set version = "3.13.3" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "35bc7a1373b7e5c55fa984e852cddaff9e353a42cbb0b5e0c41a5060928fd192" %}
 
 package:
   name: {{ name }}
@@ -11,11 +9,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: 1269a9736865512bd4056298003aab190957afe07d2616cf22eaf56cb6398369
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . -vv"
+
 
 requirements:
   build:
@@ -47,3 +46,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - dharhas
+    - synapticarbors
