@@ -1,5 +1,5 @@
 {% set name = "peewee" %}
-{% set version = "3.13.3" %}
+{% set version = "3.14.0" %}
 {% set bundle = "tar.gz" %}
 
 package:
@@ -9,11 +9,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: 1269a9736865512bd4056298003aab190957afe07d2616cf22eaf56cb6398369
+  sha256: 59c5ef43877029b9133d87001dcc425525de231d1f983cece8828197fb4b84fa
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A little ORM'
+  summary: A little ORM
   dev_url: https://github.com/coleifer/peewee/
   doc_url: http://docs.peewee-orm.com/en/latest/
 
