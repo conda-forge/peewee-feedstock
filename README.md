@@ -238,6 +238,5 @@ Feedstock Maintainers
 =====================
 
 * [@dharhas](https://github.com/dharhas/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@synapticarbors](https://github.com/synapticarbors/)
 
