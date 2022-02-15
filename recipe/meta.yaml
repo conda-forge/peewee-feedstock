@@ -1,5 +1,5 @@
 {% set name = "peewee" %}
-{% set version = "3.14.8" %}
+{% set version = "3.14.9" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01bd7f734defb08d7a3346a0c0ca7011bc8d0d685934ec0e001b3371d522ec53
+  sha256: 69c1b88dc89b184231cc1ce6df241075aca5cec43e89749cc4a63108f9ceea47
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 
