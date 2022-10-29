@@ -1,13 +1,9 @@
-BUILD:
-- aarch64-conda_cos7-linux-gnu
 c_compiler:
 - gcc
 c_compiler_version:
 - '10'
-cdt_arch:
-- aarch64
 cdt_name:
-- cos7
+- cos6
 channel_sources:
 - conda-forge
 channel_targets:
@@ -18,11 +14,9 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-  sqlite:
-    max_pin: x
 python:
-- 3.7.* *_cpython
+- 3.11.* *_cpython
 sqlite:
 - '3'
 target_platform:
-- linux-aarch64
+- linux-64
