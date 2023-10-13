@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '16'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -20,6 +20,3 @@ sqlite:
 - '3'
 target_platform:
 - osx-arm64
-zip_keys:
-- - python
-  - channel_sources
