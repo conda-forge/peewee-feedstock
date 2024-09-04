@@ -11,3 +11,6 @@ provider:
   linux_aarch64: default
   win: azure
 test: native_and_emulated
+bot:
+  automerge: false
+  inspection: update-grayskull

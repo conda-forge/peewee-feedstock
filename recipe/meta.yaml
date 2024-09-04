@@ -27,6 +27,8 @@ requirements:
     - cython >=0.22.1
     - msinttypes  # [win]
     - sqlite
+    - setuptools
+    - wheel
   run:
     - python
 
