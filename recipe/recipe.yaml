@@ -14,7 +14,17 @@ source:
 
 build:
   number: 0
-  script: python -m pip install . -vv --no-build-isolation --no-deps
+  script:
+    env:
+      if: win
+      then:
+      - NO_SQLITE: "1"
+    content:
+      - python -m pip install . -vv --no-build-isolation --no-deps
+    
+  python:
+    entry_points:
+      - pwiz = pwiz:main
 
 requirements:
   build:
@@ -30,7 +40,8 @@ requirements:
     - pip
     - cython >=0.22.1
     - if: win
-      then: msinttypes
+      then: 
+        - msinttypes
     - sqlite
     - setuptools
     - wheel
@@ -43,6 +54,8 @@ tests:
         - playhouse
         - peewee
       pip_check: true
+  - script:
+      - pwiz --help
 
 about:
   license: MIT
