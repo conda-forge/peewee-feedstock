@@ -16,7 +16,7 @@ build:
   number: 0
   script:
     env:
-      - NO_SQLITE: ${{ "1" if win else "0" }}
+      NO_SQLITE: ${{ "1" if win else "0" }}
     content:
       - python -m pip install . -vv --no-build-isolation --no-deps
     
