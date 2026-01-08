@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: peewee
-  version: "3.18.3"
+  version: "3.19.0"
 
 package:
   name: ${{ name }}
@@ -10,11 +10,19 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 62c3d93315b1a909360c4b43c3a573b47557a1ec7a4583a71286df2a28d4b72e
+  sha256: f88292a6f0d7b906cb26bca9c8599b8f4d8920ebd36124400d0cbaaaf915511f
 
 build:
   number: 0
-  script: python -m pip install . -vv --no-build-isolation --no-deps
+  script:
+    env:
+      NO_SQLITE: ${{ "1" if win else "0" }}
+    content:
+      - python -m pip install . -vv --no-build-isolation --no-deps
+    
+  python:
+    entry_points:
+      - pwiz = pwiz:main
 
 requirements:
   build:
@@ -30,7 +38,8 @@ requirements:
     - pip
     - cython >=0.22.1
     - if: win
-      then: msinttypes
+      then: 
+        - msinttypes
     - sqlite
     - setuptools
     - wheel
@@ -43,6 +52,8 @@ tests:
         - playhouse
         - peewee
       pip_check: true
+  - script:
+      - pwiz --help
 
 about:
   license: MIT
