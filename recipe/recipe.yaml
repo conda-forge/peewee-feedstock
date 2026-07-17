@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: peewee
-  version: "4.2.4"
+  version: "4.2.6"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 0ba411fcda2be276d55ec9f335518cb603e2899da03611a1d44502f5aece6837
+  sha256: f40655c64a62eaa447af228e4b84a5e80d3c812d2de34c7b9c621a3ef0c6555c
 
 build:
   number: 0
