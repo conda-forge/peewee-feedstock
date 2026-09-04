@@ -13,7 +13,7 @@ source:
   sha256: ea3b013d2366d09bb0bd7b6223f0e3e34125caad5d4dfc23525c668c8aad7026
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       NO_SQLITE: ${{ "1" if win else "0" }}
