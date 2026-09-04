@@ -21,4 +21,7 @@ python:
 sqlite:
 - '3'
 target_platform:
-- linux-aarch64
+- linux-64
+zip_keys:
+- - python
+  - channel_sources
